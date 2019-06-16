@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'Futura';
+	src: url(../fonts/Futura-T-OT-Book_19064.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url(../fonts/Futura-T-OT-Medium_19078.ttf);
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url(../fonts/Futura-T-OT-Bold_19062.ttf);
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url(../fonts/Futura-T-OT-Light_19074.ttf);
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'URWAntiqua';
+	src: url(../fonts/URWAntiquaTUltBolExtNar_Oblique.ttf);
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Accius-Buch';
+	src: url(../fonts/Accius-Buch-Rounded-D-OT-Bold_1763.ttf);
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+h1,
+.h1 {
+	font-size: 4.625rem; //90
+}
+
+h2,
+.h2 {
+	font-size: 5rem; //80
+}
+
+h3,
+.h3 {
+	font-size: 3.75rem; //60
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Accius-Buch';
+}
+
+p {
+	font-size: $font-size-normal;
+	margin: 0;
+}
+
+.title {
+	font-size: 8.5625rem;
+}
+
+@media screen and (max-width: 700px) {
+
+	h1,
+	.h1 {
+		font-size: 3.625rem; //90
+	}
+
+	h2,
+	.h2 {
+		font-size: 3rem; //80
+	}
+
+	h3,
+	.h3 {
+		font-size: 2.75rem; //60
+	}
+
+	.title {
+		font-size: 5.5625rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	h1,
+	.h1 {
+		font-size: 2.625rem; //90
+	}
+
+	h2,
+	.h2 {
+		font-size: 1.5rem; //80
+	}
+
+	h3,
+	.h3 {
+		font-size: 1.75rem; //60
+	}
+
+	.title {
+		font-size: 3.5625rem;
+	}
+
+}

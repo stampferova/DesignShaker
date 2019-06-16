@@ -1,0 +1,46 @@
+.link-rounded {
+	display: inline-block;
+	width: 8rem;
+	height: 8rem;
+	transition: 0.3s color;
+	color: $shadow;
+	
+	&:hover {
+		color: darken($muted, 5%);
+	}
+}
+
+.link-arrow {
+	text-transform: uppercase;
+	font-family: 'Futura';
+	font-weight: normal;
+	display: inline-block;
+	text-decoration: none;
+	color: $text;
+	font-size: $font-size-medium;
+	padding: 1rem 12.5rem 1rem 0.5rem;
+	position: relative;
+
+	transition: 0.3s transform;
+
+	&:hover {
+		.link-inner {
+			right: -0.7rem
+		}
+	}
+
+}
+
+.link-inner {
+	position: absolute;
+	top: 53%;
+	transform: translateY(-50%);
+	right: 0;
+}
+
+@media screen and (max-width: 600px) {
+	.link-rounded {
+		width: 4rem;
+		height: 4rem;
+	}
+}

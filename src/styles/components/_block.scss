@@ -1,0 +1,7 @@
+.block {
+	padding: 6rem 0.8rem;
+
+	@media screen and (max-width: 850px) {
+		padding: 2rem 0.8rem;
+	}
+}

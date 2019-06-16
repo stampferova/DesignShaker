@@ -1,0 +1,170 @@
+.hero {
+	position: relative;
+	padding-top: 1px;
+	min-height: 100vh;
+	margin: 0 6rem 2rem;
+	
+	h1 {
+		font-size: 7rem;
+		line-height: 1;
+		margin-bottom: 2rem;
+	}
+
+	h2 {
+		color: $muted;
+	}
+
+	&__text {
+		max-width: 32rem;
+
+	}
+
+	&__logo,
+	&__logo--secondary {
+		font-size: 5.375rem;
+		text-transform: uppercase;
+		line-height: 0.9;
+		display: inline-block;
+	}
+
+	&__logo {
+		color: $primary;
+		font-family: 'Futura';
+		max-width: 18.9375rem;
+		font-weight: 900;
+		font-style: italic;
+		transform: rotate(-5deg);
+	}
+
+	&__logo.logo {
+		top: 43%;
+		right: 16%;
+		position: absolute;
+	}
+
+	&__logo--secondary {
+		color: $secondary;
+		font-family: 'URWAntiqua';
+		max-width: 14rem;
+		transform: rotate(90deg);
+		position: absolute;
+		top: 0;
+		left: 47.5%;
+
+	}
+
+	&__image,
+	&__image--secondary {
+		position: absolute;
+		z-index: -1;
+		width: 27.4375rem;
+		height: 43.375rem;
+		background: {
+			position: 50% 50%;
+			size: cover;
+			repeat: no-repeat;
+		}
+	}
+
+	&__image {
+		background-image: url('../assets/img1.jpg');
+		top: 0;
+		left: 23.5%;
+	}
+
+	&__image--secondary {
+		background-image: url('../assets/chair.png');
+		top: 50%;
+		left: 48%;
+	}
+
+	&__image--third {
+		position: absolute;
+		top: 4rem;
+		right: 90%;
+		z-index: -1;
+		width: 25rem;
+		height: 40rem;
+		background: {
+			position: 50% 50%;
+			size: cover;
+			repeat: no-repeat;
+			image: url('../assets/mirrors.jpg');
+		}
+	}
+
+
+	@media screen and (max-width: 1390px) {
+		&__logo.logo {
+			right: 0;
+		}
+
+		&__logo--secondary {
+			left: 60%;
+		}
+
+		&__image--third {
+			right: 80%;
+		}
+
+	}
+
+	@media screen and (max-width: 1150px) {
+		margin: 0 2rem 3rem;
+
+		&__image--third {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 1000px) {
+		&__image {
+			opacity: 0.7;
+		}
+
+		&__image--secondary {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 850px) {
+		margin: 0 ;
+		padding-bottom: 2rem;
+
+		&__logo,
+		&__logo--secondary {
+			font-size: 3rem;
+		}
+
+		&__logo--secondary {
+			display: none;
+		}
+
+		&__logo.logo {
+			display: none;
+		}
+
+		&__image {
+			width: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+
+		}
+	}
+
+	@media screen and (max-width: 700px) {
+		min-height: unset;
+
+		h1  {
+			font-size: 3.5rem;;
+		}
+
+		h2 {
+			color: $text;
+		}
+
+		
+	}
+
+}
